@@ -95,11 +95,11 @@ public class LoginService {
         if (loginDeviceEnum == null) {
             return ResponseDTO.userErrorParam("登录设备暂不支持！");
         }
-        // 校验 图形验证码
-        ResponseDTO<String> checkCaptcha = captchaService.checkCaptcha(loginForm);
+        // 校验 图形验证码      关闭验证码功能
+        /*ResponseDTO<String> checkCaptcha = captchaService.checkCaptcha(loginForm);
         if (!checkCaptcha.getOk()) {
             return ResponseDTO.error(checkCaptcha);
-        }
+        }*/
 
         /**
          * 验证账号和账号状态

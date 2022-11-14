@@ -18,11 +18,15 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class CaptchaForm {
 
+    /*
+    * @NotBlank   放弃验证输入框的内容
+     * */
+
     @ApiModelProperty(value = "验证码")
-    @NotBlank(message = "验证码不能为空")
+ //   @NotBlank(message = "验证码不能为空")
     private String captchaCode;
 
     @ApiModelProperty(value = "验证码uuid标识")
-    @NotBlank(message = "验证码uuid标识不能为空")
+  //   @NotBlank(message = "验证码uuid标识不能为空")
     private String captchaUuid;
 }

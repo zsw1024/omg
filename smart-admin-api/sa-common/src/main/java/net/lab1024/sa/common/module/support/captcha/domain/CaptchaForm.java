@@ -19,7 +19,7 @@ import javax.validation.constraints.NotBlank;
 public class CaptchaForm {
 
     /*
-    * @NotBlank   放弃验证输入框的内容
+    * @NotBlank   放弃验证输入框的内容 不校验字符为空
      * */
 
     @ApiModelProperty(value = "验证码")
